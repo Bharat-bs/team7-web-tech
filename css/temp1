@@ -1,0 +1,72 @@
+<?php 
+require_once("header.php");
+ ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+		<link rel="stylesheet" type="text/css" href="css/jobs.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+
+<script src="scriptjs/angular.js">  </script>   
+<script src="scriptjs/angular-route.js"></script>
+<script src="scriptjs/angular-resource.js"></script>
+<script src="js/jobs.js"></script>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body ng-app="jobmod">
+<div>
+	<div id="search2" ng-init="searchlist=['java tester','java developer','python developer','support engineer','Manager','Asst manager','HR manager','salesman','agent','team leader','receptionist','call center'];searc=0;">
+		<input type="search" name="" placeholder="Search jobs" ng-model="searc">
+		<div class="searchblock">
+<div class="searchelement" ng-repeat="x in searchlist | filter:searc">{{x}}</div>
+</div>
+</div>
+</div>
+<div class="jobsouter">
+	<div class="jobsinner" id="jobsfilter">
+
+<label for="orderby">ORDER BY</label>
+<select name="orderby">
+	<option>newest</option>
+	<option>company rating</option>
+	<option>salary</option>
+</select>
+		
+<div class="slidecontainer">
+  <input type="range" min="1" max="10" value="5" step="1" class="slider" id="myRange">
+</div>
+
+<!-- 	</div> -->
+
+	<div class="jobsinner" id="jobscontent" ng-contoller="jobcont as postjob">
+		<div class="postjob" >
+			<h1>JOB TITLE</h1>
+			<div class="postjobin"><li>COMPANY : GOOGLE</li><li>SALARY : 100000</li><li>TIME : 9-6</li></div><div class="postjobin"><li>SKILL SET : MBA , BA</li><li>LOCATION : MADURAI</li><li>EXPERIENCE : 5</li></div>
+		</div>
+				<div class="postjob">
+			<h1>JOB TITLE</h1>
+			<div class="postjobin"><li>COMPANY : GOOGLE</li><li>SALARY : 100000</li><li>TIME : 9-6</li></div><div class="postjobin"><li>SKILL SET : MBA , BA</li><li>LOCATION : MADURAI</li><li>EXPERIENCE : 5</li></div>
+		</div>
+				<div class="postjob">
+			<h1>JOB TITLE</h1>
+			<div class="postjobin"><li>COMPANY : GOOGLE</li><li>SALARY : 100000</li><li>TIME : 9-6</li></div><div class="postjobin"><li>SKILL SET : MBA , BA</li><li>LOCATION : MADURAI</li><li>EXPERIENCE : 5</li></div>
+		</div>
+				<div class="postjob">
+			<h1>JOB TITLE</h1>
+			<div class="postjobin"><li>COMPANY : GOOGLE</li><li>SALARY : 100000</li><li>TIME : 9-6</li></div><div class="postjobin"><li>SKILL SET : MBA , BA</li><li>LOCATION : MADURAI</li><li>EXPERIENCE : 5</li></div>
+		</div>
+				<div class="postjob">
+			<h1>JOB TITLE</h1>
+			<div class="postjobin"><li>COMPANY : GOOGLE</li><li>SALARY : 100000</li><li>TIME : 9-6</li></div><div class="postjobin"><li>SKILL SET : MBA , BA</li><li>LOCATION : MADURAI</li><li>EXPERIENCE : 5</li></div>
+		</div>
+		<div ng-repeat="j in postjob.joblist">
+			{{j.name}}
+		</div>
+	</div>
+</div>
+</body>
+</html>

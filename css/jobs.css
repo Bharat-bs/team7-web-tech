@@ -1,0 +1,62 @@
+.jobsinner{
+	margin-top: 7vh;
+
+	float:left;
+}
+
+#jobsfilter{
+	margin-left: 10vw;
+	width: 20vw;
+	height: 50vh;
+	position: sticky;
+	top: 0px;
+
+}
+.jobsouter{
+}
+
+#jobscontent
+{
+	margin-left: 5vw;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	z-index: -1;
+}
+
+#search2 input{
+	width: 80vw;
+	margin-left: 10vw;
+}
+
+.postjob{
+	display: inline-block;
+	background-color: white;
+	height: 20vh;
+	padding: 24px;
+	padding-top: 10px;
+
+
+}
+.postjob li{
+	display: flex;
+}
+.searchblock{
+	position: fixed;
+	z-index: 998;
+}
+.searchelement{
+	display: block;
+	width: 80vw;
+	height: 2vh;
+	background-color:white;
+	margin-left: 10vw;
+	border-style: solid;
+	border-width: 0px 1px 1px 1px;
+	z-index: 999;
+	padding: 8px;
+}
+.postjobin{
+	margin-left: 5vw;
+	float: left;
+}

@@ -1,0 +1,80 @@
+.profBar{
+	background-color: #2c3531;
+	/*color: white;*/
+	display: block;
+	width: 100%;
+	height: 7vh;
+}
+.profBar li{
+	display: block;
+	padding: 10px;
+	float: right;
+		color: white;
+	background-color: #2c3531;
+}
+.registerouter{
+	margin-top: 10vh;
+}
+table{
+	background-color: white;
+}
+input{
+	display: inline-block;
+	height: 4vh;
+	width: 10vw;
+	margin-left: 10vw;
+
+}
+
+textarea{
+	display: inline-block;
+}
+
+input[type="checkbox"]{
+	width: 20px;
+	height:20px;
+
+}
+label{
+	display: inline-block;
+	height: 4vh;
+	width: 10vw;
+	margin-left: 10vw;
+}
+table{
+	margin-top: 8vh;
+	margin-left: 10vw;
+}
+.add{
+margin-top: 7vh;
+margin-left: 35vw;
+}
+textarea{
+	display: inline-block;
+	margin-left: 10vw;
+}
+form[name="employmentrecord"] label{
+		width: 17vw;
+}
+
+.declaration{
+	margin-top: 5vh;
+	display: block;
+	width: 60vw;
+	margin-left: 20vw;
+
+
+}
+th{
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	padding: 5px;
+}
+.rem{
+	height: 5px;
+	width: 5px;
+	border-radius: 50px;
+	border-style: none;
+	background-color: red;
+
+}

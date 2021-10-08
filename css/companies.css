@@ -1,0 +1,33 @@
+.comsinner{
+	margin-top: 7vh;
+	background-color: green;
+	float: left;
+}
+
+#comfilter{
+	margin-left: 10vw;
+	width: 20vw;
+	background-color: blue;
+	height: 50vh;
+	position: sticky;
+	top: 0px;
+
+}
+.comouter{
+	margin-top: 7vh;
+	background-color: g;
+}
+
+#comcontent
+{
+	margin-left: 5vw;
+	width: 50vw;
+	background-color: red;
+	padding: 24px;
+}
+
+#search2 input{
+	width: 80vw;
+	margin-left: 10vw;
+}
+

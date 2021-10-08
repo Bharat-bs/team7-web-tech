@@ -1,0 +1,21 @@
+form{
+	margin-left: 10vw;
+}
+label{
+	margin-top: 4vh;
+}
+.applyouter *{
+	margin-top: 4vh;
+}
+
+input[type="submit"]{
+	display: block;
+	width: 8vw;
+	height: 4vh;
+	padding: 8px;
+	font-size: 18px;
+    background-color: #3f80ea;
+    border-color: #3f80ea;
+    border-style: none;
+	color: white;
+}
